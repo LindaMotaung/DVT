@@ -108,3 +108,4 @@ C:\Elevator_New\DTV.Elevator\DVT.Elevator.UnitTests\obj\Debug\net8.0\refint\DVT.
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.UnitTests\obj\Debug\net8.0\DVT.Elevator.UnitTests.pdb
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.UnitTests\obj\Debug\net8.0\DVT.Elevator.UnitTests.genruntimeconfig.cache
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.UnitTests\obj\Debug\net8.0\ref\DVT.Elevator.UnitTests.dll
+C:\Elevator_New\DTV.Elevator\DVT.Elevator.UnitTests\obj\Debug\net8.0\DVT.Elevator.UnitTests.sourcelink.json
