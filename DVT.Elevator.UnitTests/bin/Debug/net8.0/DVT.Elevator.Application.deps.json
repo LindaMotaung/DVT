@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DVT.Elevator.Application/1.0.0": {
+        "dependencies": {
+          "DVT.Elevator.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DVT.Elevator.Application.dll": {}
+        }
+      },
+      "DVT.Elevator.Domain/1.0.0": {
+        "runtime": {
+          "DVT.Elevator.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DVT.Elevator.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DVT.Elevator.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
