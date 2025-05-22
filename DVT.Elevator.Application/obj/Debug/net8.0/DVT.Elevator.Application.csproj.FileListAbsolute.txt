@@ -16,3 +16,4 @@ C:\Elevator_New\DTV.Elevator\DVT.Elevator.Application\obj\Debug\net8.0\refint\DV
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.Application\obj\Debug\net8.0\DVT.Elevator.Application.pdb
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.Application\obj\Debug\net8.0\DVT.Elevator.Application.genruntimeconfig.cache
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.Application\obj\Debug\net8.0\ref\DVT.Elevator.Application.dll
+C:\Elevator_New\DTV.Elevator\DVT.Elevator.Application\obj\Debug\net8.0\DVT.Elevator.Application.sourcelink.json

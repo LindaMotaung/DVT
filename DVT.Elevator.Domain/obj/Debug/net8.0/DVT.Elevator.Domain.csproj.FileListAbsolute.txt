@@ -9,3 +9,4 @@ C:\Elevator_New\DTV.Elevator\DVT.Elevator.Domain\obj\Debug\net8.0\DVT.Elevator.D
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.Domain\obj\Debug\net8.0\refint\DVT.Elevator.Domain.dll
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.Domain\obj\Debug\net8.0\DVT.Elevator.Domain.pdb
 C:\Elevator_New\DTV.Elevator\DVT.Elevator.Domain\obj\Debug\net8.0\ref\DVT.Elevator.Domain.dll
+C:\Elevator_New\DTV.Elevator\DVT.Elevator.Domain\obj\Debug\net8.0\DVT.Elevator.Domain.sourcelink.json

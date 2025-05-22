@@ -93,10 +93,30 @@ while (true)
                     Console.WriteLine("Invalid input. Please enter a valid floor number.");
                     continue;
                 }
+
+                var currentStatus = elevatorService.GetElevatorStatus(requestedElevatorId.Value);
+                string movementDirection = "";
+                if (currentStatus != null && floor > currentStatus.Floor)
+                {
+                    movementDirection = "up";
+                }
+                else if (currentStatus != null && floor < currentStatus.Floor)
+                {
+                    movementDirection = "down";
+                }
+
                 elevatorService.MoveElevatorToFloor(requestedElevatorId.Value, floor);
                 Log($"Elevator {requestedElevatorId} moved to floor {floor}.");
-                Console.WriteLine($"Elevator {requestedElevatorId} has moved to floor {floor}.");
+                if (!string.IsNullOrEmpty(movementDirection))
+                {
+                    Console.WriteLine($"Elevator {requestedElevatorId} has moved {movementDirection} to floor {floor}.");
+                }
+                else
+                {
+                    Console.WriteLine($"Elevator {requestedElevatorId} is already on floor {floor}.");
+                }
                 break;
+
             case 3:
                 int elevatorIdToUse = requestedElevatorId.Value;
                 Console.Write("Enter the number of people to add: ");
@@ -120,16 +140,23 @@ while (true)
                 var status = elevatorService.GetElevatorStatus(requestedElevatorId.Value);
                 if (status != null)
                 {
-                    Console.WriteLine($"Elevator {requestedElevatorId} is currently on floor {status.Floor} with {status.NumPeople} people.");
+                    string direction = status.Direction switch
+                    {
+                        Direction.Up => "going up",
+                        Direction.Down => "going down",
+                        Direction.Idle => "idle",
+                        _ => "unknown"
+                    };
+
+                    string movementStatus = status.IsMoving ? "currently moving" : "stopped";
+
+                    Console.WriteLine($"Elevator {requestedElevatorId} is {movementStatus} on floor {status.Floor} and is {direction} with {status.NumPeople} people.");
                 }
                 else
                 {
                     Console.WriteLine($"Elevator {requestedElevatorId} not found.");
                 }
                 break;
-            case 5:
-                Console.WriteLine("Exiting the elevator simulation game. Goodbye!");
-                return;
         }
     }
 }
